@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo Capitolo💻</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+      :root {
+        --background-color-light: #f0f0f0;
+        --background-color-dark: #121212;
+        --text-color-light: black;
+        --text-color-dark: white;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        background-color: var(--background-color-light);
+        color: var(--text-color-light);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      h1 {
+        font-size: 32px;
+        color: var(--text-color-light);
+        background-color: black;
+        padding: 10px;
+        border-radius: 8px;
+        display: inline-block;
+        transition: 0.3s;
+      }
+
+      p {
+        font-size: 18px;
+        color: var(--text-color-light);
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 8px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 20px auto;
+        transition: 0.3s;
+      }
+
+      .custom-button {
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        padding: 15px 25px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .custom-button:hover {
+        background-color: #ffffff;
+        color: red;
+        transform: scale(1.05);
+      }
+
+      .custom-button:active {
+        transform: scale(0.95);
+      }
+
+      /* Theme: Light */
+      .light-theme {
+        background-color: var(--background-color-light);
+        color: var(--text-color-light);
+      }
+
+      .light-theme h1, .light-theme p {
+        color: black;
+        background-color: #f0f0f0;
+      }
+
+      .light-theme .custom-button {
+        background-color: #008CBA;
+        color: white;
+      }
+
+      .light-theme .custom-button:hover {
+        background-color: #005f73;
+      }
+
+      /* Theme: Dark */
+      .dark-theme {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+      }
+
+      .dark-theme h1, .dark-theme p {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .dark-theme .custom-button {
+        background-color: #ff6347;
+        color: white;
+      }
+
+h1, p {
+  font-family: 'Poppins', sans-serif;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px auto;
+  transition: background-color 0.3s, color 0.3s;
+  max-width: 800px;
+}
+
+/* Tema chiaro */
+.light-theme body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.light-theme h1, .light-theme p {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+/* Tema scuro */
+.dark-theme body {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.dark-theme h1, .dark-theme p {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+    </style>
+</head>
+
+<body>
+<button class="custom-button" onclick="toggleTheme()">Cambia Tema</button>
+<header>    
+<h1>Cos'è l'informatica?</h1>
+<article>
+<h1>Scienza</h1>
+<p><u>L'informatica è una scienza </u>
+("info"=informazione,"matica"=Scienza),l'informatica è la scienza che studia l'organizzazione,rappresentazione e l'elaborazione <u>dell'informazione,</u> che tramite,ad esempio,la registrazione di una partita di calcio la fa diventare un video.<u>L'informatica</u> è quindi quella scienza che studia l'elaborazione e la rappresentazione dell'informatica.  </p>
+ <h1>Storia </h1>
+ <p><u>Alan Turing</u> fu un matematico che creò la "Macchina di Turing" nel 1936 che descrive il funzionamento di un computer. 
+Questa macchina aiutò gli inglesi nella <u>Seconda Guerra Mondiale</u> a decifrare i messaggi in codice dei Tedeschi.
+Alla fine della guerra non si diedero crediti a Turing perchè si pensava fosse omossesuale, fu perseguitato fino ad essere indotto alla castrazione chimica,morì all'età di 41 anni.  Nel'41 Konrad Zuse svillupò il primo compure funzionante attraverso un programma,lo Z3.
+L'archittetura di Von Neumann è una tipologia di hardware per computer digitali la quale condivide i dati del programma e le istruzioni del programma nello stesso spazio di memoria.
+ 
+<img src="img/alanturin.jpg" width="500px" height="300px"> </p>
+
+<p>Nel 1941 <u>Konrad Zuse </u>sviluppò il primo computer funzionale controllato attraverso programmi, lo <u>Z3.</u> Nel 1998 fu qualificato come macchina <u>"Turing completa".</u>Zuse sviluppò inoltre <u>l'S2,</u> considerata la prima macchina per il controllo industriale. Ha fondato uno dei primissimi business informatici nel 1941, producendo lo <u>Z4,</u> che divenne il primo computer commerciale al mondo. Nel 1946 progettò il primo linguaggio di programmazione ad alto livello.
+Nel 1948 il primo calcolatore elettronico digitale fu compeltato,il <u>Manchester Baby</u>. eseguiva programmi memorizzati come la maggior parte dei computer moderni.L'influenza su Max Newman del documento datato 1936 sulle macchine di Turing, e i suoi contributi logico-matematici al progetto, sono stati entrambi cruciali per il successivo sviluppo del Manchester SSEM.
+Nel 1950 il britannico National Physical Laboratory completò il Pilot ACE, un computer di piccola taglia programmabile, basato sulla filosofia di Turing. Con una velocità operativa di 1 MHz, il Pilot Model ACE fu per qualche tempo il computer più veloce al mondo.Il design di Turing per l'ACE aveva molto il comune con le odierne architetture RISC e si appellava per una memoria ad alta velocità di circa la stessa capacità di un primo computer Macintosh, che era immensa per gli standard di quel tempo.
+<img src="img/konradzuse.jpg" width="1px" height="1px"> </p>
+
+<p>Claude Shannon e la teoria dell'informazione,nel 1948 Claude Shannon pubblicò il saggio A Mathematical Theory of Communication, uno dei pilastri della moderna teoria dell'informazione e dell'informatica, dove compare per la prima volta il termine <u>"bit"</u>, da lui coniato per designare l'unità elementare di informazione, e dove vengono introdotti il concetto di entropia dell'informazione e l'identità tra i due valori di verità (vero e falso) della logica simbolica e i valori binari 1 e 0 dei circuiti elettronici.Con i suoi lavori dedicati alla teoria dell'informazione, all'affidabilità dei circuiti, al problema della sicurezza della comunicazione e alla crittografia, Shannon ha profondamente cambiato la teoria e la pratica della comunicazione.
+
+Norbert Wiener dopo il dottorato conseguito all'età di 18 anni alla Harvard University, con una tesi di logica matematica, Norbert Wiener studiò in Europa con Bertrand Russell e David Hilbert. Insegnò, a partire dal 1919, al MIT di Cambridge diede fondamentali contributi nel campo della teoria matematica dei processi stocastici, della previsione e del calcolo delle probabilità, e a partire dai suoi lavori sulla statistica elaborò con il suo allievo Claude Shannon, la moderna teoria dell'informazione.
+
+Negli anni della Seconda guerra mondiale, si occupò dei problemi del controllo automatico delle armi belliche.Stimolato da queste ricerche, elaborò il progetto di una scienza generale della regolazione del controllo, da lui battezzata "cibernetica", e presentata in un libro di grande successo, intitolato "Cybernetics or control and communication" in the animal and the machine (La cibernetica, ovvero il controllo e la comunicazione negli animali e nelle macchine, 1948).Da allora, pur continuando a occuparsi di matematica generale, si dedicò prevalentemente allo sviluppo e alla divulgazione della nuova disciplina.
+
+John von Neumann e l'architettura di Von Neumann
+In informatica l'architettura di von Neumann è una tipologia di architettura hardware per computer digitali programmabili a programma memorizzato la quale condivide i dati del programma e le istruzioni del programma nello stesso spazio di memoria. Per tale caratteristica l'architettura di von Neumann si contrappone all'architettura Harvard nella quale invece i dati del programma e le istruzioni del programma sono memorizzati in spazi di memoria distinti. Von Neumann propose una struttura molto semplice, che è poi quella che troviamo rispecchiata, in linea di principio, nei nostri PC.
+
+Secondo John von Neumann, gli elementi essenziali di un calcolatore programmabile sono:
+
+L'unità di controllo, che controlla e governa la sequenza delle operazioni perché avvenga in maniera corretta.
+L'unità aritmetico-logica (detta ALU, Arithmetic Logic Unit), che esegue le operazioni di tipo aritmetico e logico.
+L'accumulatore, un'unità memoria collocata all'interno dell'ALU, in grado di ricevere informazioni dall'esterno (i dati in input) per passarli al sistema e di restituire i risultati dei calcoli verso il mondo esterno (dati in output).
+La memoria, alla quale doveva essere possibile accedere in tempo brevissimo per recuperare i dati e il programma in essa contenuti. 
+<img src="img/kingvon.jpg" width="500px" height="300px"> 
+<img src="img/vonneummanarch.jpg" width="500px" height="300px"> </p>
+
+
+
+<h1>Aspetti postivi e negativi </h1> </strong>
+<p><u>L'informatica </u> ha molti aspetti positivi ma a sua volta ha molti aspetti negativi;alcuni aspetti positivi sono ad esempio:miglioramento nelle ricerche scientifiche,gestione di magazzini,efficenza nelle comunicazione,conoscenza maggiore della cultura generale.
+Gli aspetti negativi sono:furto di dati,dipendenza dai social network,cyberbullismo,isolamento sociale (<u> Hikikomori</u>).<img src="img/aspettiinformatica.jpg"> </p>
+<p>Un <u> Hikikomori </u> (Hiku="tirare",Komoru="chiudersi")è una persona che ha scelto di limitare la sua propia vita sociale,spesso ricorrendo a liveli estremi di isolamento.
+Tale scelta può essere indotta da fattori personali e sociali,la maggior parte di questi casi succede della pressione del successo personale nella società giapponese a cui l'individuo è già sottoposto da adolescente.
+<h1>Consapevoli in rete </h1>
+<p>Essere dei cittadini digitali consapevoli significa comprendere le informazioni in rete e capire quali sono false e vere.
+Alcuni dei pericoli dell'informatica è il tempo usato e come è usato:se si usa troppo l'informatica potrebbe diventare una dipendenza. </p>
+
+<div class="navbar">
+<p style="border:2px solid black;">
+<button class="custom-button"onclick="window.location.href='copertina.html'">INDICE</button>
+</div>
+
+
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light-theme");
+    }
+function toggleTheme() {
+  document.body.classList.toggle('dark-theme');
+  document.body.classList.toggle('light-theme');
+}
+function toggleTheme() {
+  const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+  document.body.classList.remove(`${currentTheme}-theme`);
+  document.body.classList.add(`${newTheme}-theme`);
+
+  localStorage.setItem('theme', newTheme);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.body.classList.add(`${savedTheme}-theme`);
+});
+  </script>
+</body>
+</html>
